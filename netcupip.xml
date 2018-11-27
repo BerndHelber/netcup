@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:ns1="http://enduser.service.web.vcp.netcup.de/">
+    	<SOAP-ENV:Body>
+            	<ns1:changeIPRouting>
+                    	<loginName>NETCUPCUSTOMER</loginName>
+                    	<password>NETCUPWEBSOAPPASSWORD</password>
+                    	<routedIP>1.2.3.3</routedIP>
+                    	<routedMask>32</routedMask>
+                    	<destinationVserverName>MYNETCUPSERVERNAME</destinationVserverName>
+                    	<destinationInterfaceMAC>co:ffee:00:11</destinationInterfaceMAC>
+            	</ns1:changeIPRouting>
+    	</SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
