@@ -1,0 +1,9 @@
+[Unit]
+Description=Netcupfailoverip
+
+[Service]
+Type=oneshot
+RemainAfterExit=yes
+ExecStart=/usr/bin/curl -H "Content-Type: text/xml; charset=utf-8" -H "SOAPAction:" -d @/etc/netcupip/netcupip.xml -X POST https://www.servercontrolpanel.de:443/WSEndUser
+[Install]
+WantedBy=multi-user.target
